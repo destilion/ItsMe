@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <Header />
+    <NavBar />
     <div class="container mrgnbtm">
           <div class="row">
             <div class="col-md-8">
@@ -18,19 +18,19 @@
 </template>
 
 <script>
-import Header from './Header.vue'
 import CreateUser from './CreateUser.vue'
 import DisplayBoard from './DisplayBoard.vue'
 import Users from './Users.vue'
 import { getAllUsers, createUser } from '../services/UserService'
+import NavBar from './NavBar.vue'
 
 export default {
   name: 'Dashboard',
   components: {
-    Header,
     CreateUser,
     DisplayBoard,
-    Users
+    Users,
+    NavBar
   },
   data() {
       return {
