@@ -45,6 +45,13 @@ export default {
 min-height: 100vh;
 background-color:black;
 }
+.navbar{
+  border-bottom-style: solid;
+  border-bottom-color: gray;
+}
+.view{
+  min-height: 100vh;
+}
 
 
 </style>
