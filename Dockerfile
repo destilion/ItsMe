@@ -4,6 +4,7 @@ WORKDIR /app
 COPY ./my-site/package*.json ./
 RUN npm install
 COPY ./my-site/ .
+RUN npm install
 RUN npm run build
 
 # production stage
