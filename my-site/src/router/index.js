@@ -1,14 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import home from '@/components/home'
-import resume from '@/components/resume'
-import projects from '@/components/projects'
+import { createWebHistory, createRouter } from 'vue-router';
+import home from '@/components/HomeComponent.vue'
+import resume from '@/components/ResumeComponent.vue'
+import projects from '@/components/ProjectsComponent.vue'
 
-Vue.use(Router)
-
-export default new Router({
-  routes: [
-    {
+const routes = [{
         path: '/',
         name: 'home',
         component: home
@@ -23,5 +18,9 @@ export default new Router({
         name: 'projects',
         component: projects
     }
-  ]
+]
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
 })
+export default router
