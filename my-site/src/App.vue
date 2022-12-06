@@ -42,7 +42,7 @@ export default {
 
 }
 .body{
-min-height: 100vh;
+min-height: 100%;
 background-color:black;
 }
 .navbar{
@@ -50,8 +50,8 @@ background-color:black;
   border-bottom-color: gray;
 }
 .view{
-  min-height: 100vh;
+  min-height: 100%;
 }
-
+html,body {background-color: black;}
 
 </style>
