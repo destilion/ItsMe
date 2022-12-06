@@ -1,63 +1,50 @@
-<script>
-import Home from './components/HomeComponent.vue'
-import Resume from './components/ResumeComponent.vue'
-import Projects from './components/ProjectsComponent.vue'
-
-const routes = {
-  '/': Home,
-  '/resume': Resume,
-  '/projects': Projects
-}
-
-export default {
-  data() {
-    return {
-      currentPath: window.location.hash
-    }
-  },
-  computed: {
-    currentView() {
-      return routes[this.currentPath.slice(1)||'/']
-    }
-  },
-  mounted() {
-    window.addEventListener('hashchange', () => {
-      this.currentPath = window.location.hash
-		})
-  }
-}
-</script>
 <template>
-  <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <button><a href="/">Home</a></button>
-          <button><a href="#/resume">Resume</a></button>
-          <button><a href="#/projects">Projects</a></button>
+  <div class="body">
+  <div id="app">
+    <div class="navbar navbar-expand-sm navbar-dark bg-black">
+      <div class="container">
+            <router-link to="/" class="navbar-brand" href="">Home</router-link>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/resume">Resume</router-link>
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link" to="/projects">Projects</router-link>
+                    </li>
+
+          </ul>
         </div>
-        <div class="col-md-4">
-          <button>Switch</button>
         </div>
       </div>
       <div>
-        <component :is="currentView" />
+         <router-view/>
       </div>
   </div>
+</div>
 </template>
-
-<template>
-  <div id="app">
-    
-    <router-view/>
-  </div>
-</template>
-
 <script>
+
 export default {
   name: 'App'
 }
 </script>
-
 <style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: gray;
+
+}
+.body{
+min-height: 100vh;
+background-color:black;
+}
+
 
 </style>
