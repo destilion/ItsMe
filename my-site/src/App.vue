@@ -3,7 +3,8 @@
   <div id="app">
     <div class="navbar navbar-expand-sm navbar-dark bg-black">
       <div class="container">
-            <router-link to="/" class="navbar-brand" href="">Home</router-link>
+        <img class="logo" src="../public/logo.jpg">
+            <router-link to="/" class="navbar-brand" href="" style="color: gray;">Home</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,7 +30,10 @@
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  created(){
+    document.title = "aLuan"
+  }
 }
 </script>
 <style>
@@ -53,5 +57,8 @@ background-color:black;
   min-height: 100%;
 }
 html,body {background-color: black;}
-
+.logo{
+  padding-left: 1vh;
+  padding-right: 2vh;
+}
 </style>
