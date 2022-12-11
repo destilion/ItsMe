@@ -3,7 +3,7 @@
   <div id="app">
     <div class="navbar navbar-expand-sm navbar-dark bg-black">
       <div class="container">
-        <img class="logo" src="../public/logo.jpg">
+        <img class="logo" src="../public/logo2.png">
             <router-link to="/" class="navbar-brand" href="" style="color: gray;">Home</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,6 +58,9 @@ background-color:black;
 }
 html,body {background-color: black;}
 .logo{
+
+  max-height: 75px;
+  max-width: 75px;
   padding-left: 1vh;
   padding-right: 2vh;
 }

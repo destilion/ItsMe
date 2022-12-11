@@ -4,7 +4,7 @@
             <h1>Resume</h1>
         </div>
 
-        <embed class="container-md" src="https://drive.google.com/file/d/1CXiO2iqh4V9YAsn10LzIaZsQiSy-Pq4H/preview" style="height: -webkit-fill-available">
+        <embed class="resume container-md" src="https://drive.google.com/file/d/1CXiO2iqh4V9YAsn10LzIaZsQiSy-Pq4H/preview" style="height: -webkit-fill-available">
 
         </div>
 </template>
@@ -13,5 +13,6 @@
         name: 'resume-component'
     }
 </script>
-<style>
+<style scoped>
+
 </style>

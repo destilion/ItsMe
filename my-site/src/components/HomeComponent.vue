@@ -7,20 +7,28 @@
                         Sadly there isn't much here at the moment since it is still under construction 
                         but do take a look around and click on some links.
                     </div>
-                    <div><a href="https://github.com/destilion" target="_blank">Github Profile</a></div>
-                    <div><a href="https://www.linkedin.com/in/andersonluan/" target="_blank">LinkedIn</a></div>
+                    <div>
+                        <a href="https://github.com/destilion" target="_blank">
+                            <img class="logo" src="../../public/github.png">
+                            Github Profile
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/andersonluan/" target="_blank">
+                            <img class="logo" src="../../public/linkedin.png">
+                            LinkedIn
+                        </a>
+                    </div>
 
                 <div class="about-me">
                     <h3 class="title">Who am I?</h3>
                     <div class="content">
-                        My name is Anderson and I'm a computer science graduate from Ryerson University. Currently unemployed and looking for a job.
+                        My name is Anderson and I'm a computer science graduate from Ryerson University. Currently unemployed and looking for a job (ahem if you're an employer reading this, this part is meant for you). My main interests are full stack developer, backend, and just writing code in general. My hobbies are reading, badminton, eating good food, and the occasional gaming.
                     </div>
                 </div>
             </div> 
-
-
-
     </div>
+    <div class="footer"></div>
 </template>
   
 <script>
@@ -36,7 +44,7 @@ export default {
     }
     .title{
         padding-top: 2vh;
-        padding-bottom: 3vh;
+        padding-bottom: 1vh;
         color: gray;
 
     }
@@ -56,5 +64,8 @@ export default {
     color: lightyellow;
     background-color: transparent;
     text-decoration: underline;
+    }
+    .footer{
+        padding-bottom: 5vh;
     }
 </style>
