@@ -23,7 +23,7 @@
                 <div class="about-me">
                     <h3 class="title">Who am I?</h3>
                     <div class="content">
-                        My name is Anderson and I'm a computer science graduate from Ryerson University. Currently unemployed and looking for a job (ahem if you're an employer reading this, this part is meant for you). My main interests are full stack developer, backend, and just writing code in general. My hobbies are reading, badminton, eating good food, and the occasional gaming.
+                        My name is Anderson and I'm a computer science graduate from Ryerson University. Currently unemployed and looking for a job (ahem if you're an employer reading this, this part is meant for you). My main interests are full stack development, backend, and just writing code in general. My hobbies are reading, badminton, eating good food, and occasionally gaming.
                     </div>
                 </div>
             </div> 
